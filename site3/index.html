@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="file.txt" method="get">
+<fieldset>
+    <legend>Обязательная информация</legend>
+    <label for="fio">Фамилия Имя Отчество</label>
+    <input type="text" name="fio" id="fio"><br><br>
+    <label for="gender">Пол</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужчина</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женщина</label><br><br>
+    <label for="tel">Номер телефона</label>
+    <input type="tel" name="tel" id="tel"><br><br>
+    <label for="email">Адрес электронной почты</label>
+    <input type="email" name="email" id="email"><br><br>
+    <label for="login">Логин</label>
+    <input type="text" name="login" id="login"><br><br>
+    <label for="pass">Пароль</label>
+    <input type="password" name="pass" id="pass"><br><br>
+</fieldset>
+<fieldset>
+    <legend>Дополнительная информация</legend>
+    <label for="photo">Фотография</label>
+    <input type="file" name="photo" id="photo"><br>
+    <label for="hobby">Хобби</label><br>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Чтение</label><br>
+    <input type="checkbox" id="sport" name="hobby" value="sport">
+    <label for="sport">Спорт</label><br>
+    <input type="checkbox" id="traveling" name="hobby" value="traveling">
+    <label for="traveling">Путешествие</label><br>
+</fieldset><br>
+<input type="submit" value="Отправить">
+<input type="reset" value="Сбросить">
+    </form>
+</body>
+</html>
