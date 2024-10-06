@@ -1,0 +1,42 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+
+  .grid{
+    grid-template-areas:'article1 article2 article3 article3'
+    'article1 article4 article3 article3'
+    'article1 article5 article6 article7'
+    'article8 article9 article9 article10' ;
+    display: grid;
+  }
+  .grid>article:nth-child(1){
+    grid-area: article1;
+  }
+  .grid>article:nth-child(3){
+    grid-area: article3;
+  }
+  .grid>article:nth-child(9){
+    grid-area: article9;
+  }
